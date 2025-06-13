@@ -1,0 +1,17 @@
+{
+  "name": "sidecar-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg index.js --output app && node mv.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@yao-pkg/pkg": "^6.5.1"
+  }
+}
