@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "**/node-sidecar-lab": true,
+    "**/tauri-quick-start": true
+  },
+  "search.exclude": {
+    "**/node-sidecar-lab": true,
+    "**/tauri-quick-start": true
+  }
+}
