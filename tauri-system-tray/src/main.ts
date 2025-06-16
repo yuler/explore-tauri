@@ -1,26 +1,4 @@
 import { invoke } from "@tauri-apps/api/core";
-import { TrayIcon } from '@tauri-apps/api/tray';
-// import { defaultWindowIcon } from '@tauri-apps/api/app';
-import { Menu } from '@tauri-apps/api/menu';
-
-const menu = await Menu.new({
-  items: [
-    {
-      id: 'about',
-      text: 'About',
-      action: () => {
-        console.log("About");
-      },
-    },
-  ],
-});
-const options = {
-  menu,
-  // icon: await defaultWindowIcon(),
-};
-
-await TrayIcon.new(options);
-
 
 let greetInputEl: HTMLInputElement | null;
 let greetMsgEl: HTMLElement | null;

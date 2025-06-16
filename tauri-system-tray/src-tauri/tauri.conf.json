@@ -10,14 +10,23 @@
     "frontendDist": "../dist"
   },
   "app": {
-    "withGlobalTauri": true,
     "windows": [
       {
         "title": "tauri-system-tray",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "skipTaskbar": false,
+        "resizable": true,
+        "visible": true,
+        "alwaysOnTop": false,
+        "transparent": true
       }
     ],
+    "trayIcon": {
+      "id": "tray",
+      "iconAsTemplate": true,
+      "iconPath": "icons/icon.ico"
+    },
     "security": {
       "csp": null
     }
